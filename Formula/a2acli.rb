@@ -5,21 +5,21 @@
 class A2acli < Formula
   desc "A standalone A2A v1.0 compliant command-line client"
   homepage "https://github.com/ghchinoy/a2acli"
-  version "1.4.4"
+  version "1.4.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ghchinoy/a2acli/releases/download/v1.4.4/a2acli_Darwin_x86_64.tar.gz"
-      sha256 "7623ba28509815f1c1ae5c651dee1ca8c4089140c73c127e53d251b83fe0ac7e"
+      url "https://github.com/ghchinoy/a2acli/releases/download/v1.4.5/a2acli_Darwin_x86_64.tar.gz"
+      sha256 "c22af32bd7a971a62bd5af71e728e6adfcbb2e2fe689fed8c4c22b8c0e5a9579"
 
       define_method(:install) do
         bin.install "a2acli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ghchinoy/a2acli/releases/download/v1.4.4/a2acli_Darwin_arm64.tar.gz"
-      sha256 "efbb44e21aa85eff4af2418d6d748f296d9121a551686f144a53f0c93b6899d7"
+      url "https://github.com/ghchinoy/a2acli/releases/download/v1.4.5/a2acli_Darwin_arm64.tar.gz"
+      sha256 "31aef27f9b0c9e7e3dfb0193223d76e5896e6ad04d9be4ace447ccd217406560"
 
       define_method(:install) do
         bin.install "a2acli"
@@ -29,15 +29,15 @@ class A2acli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghchinoy/a2acli/releases/download/v1.4.4/a2acli_Linux_x86_64.tar.gz"
-      sha256 "fb1702f8c1a813aac1253e595eb1e1000be3cd42c2521c4dea79176dc206d131"
+      url "https://github.com/ghchinoy/a2acli/releases/download/v1.4.5/a2acli_Linux_x86_64.tar.gz"
+      sha256 "161acf994b6feb14545fea050249a2b89378a3ebec37400cc96a4a7ac23bb6d3"
       define_method(:install) do
         bin.install "a2acli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghchinoy/a2acli/releases/download/v1.4.4/a2acli_Linux_arm64.tar.gz"
-      sha256 "e9f510771f2bef62c9fccf8d48b0fce9eb5b65181f8d82d4fdabbae86936aa15"
+      url "https://github.com/ghchinoy/a2acli/releases/download/v1.4.5/a2acli_Linux_arm64.tar.gz"
+      sha256 "4ac1a6b5ee7579c8769a3527dfe95c9afa277b6acf3bcfc55a953485e174df89"
       define_method(:install) do
         bin.install "a2acli"
       end
