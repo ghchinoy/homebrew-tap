@@ -5,21 +5,21 @@
 class Binder < Formula
   desc "Convert a plain-markdown corpus into a conformant OKF bundle"
   homepage "https://github.com/ghchinoy/binder"
-  version "0.3.2"
+  version "0.3.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ghchinoy/binder/releases/download/v0.3.2/binder_0.3.2_darwin_amd64.tar.gz"
-      sha256 "ae330f5333320400021edcb623ae90061bd208e1fadb659f8517cfe0aa7cc3a9"
+      url "https://github.com/ghchinoy/binder/releases/download/v0.3.3/binder_0.3.3_darwin_amd64.tar.gz"
+      sha256 "fccaef15b375f2d28b86544e3ef9974376c5d46cb59223a1fd1ce29bf867054a"
 
       define_method(:install) do
         bin.install "binder"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ghchinoy/binder/releases/download/v0.3.2/binder_0.3.2_darwin_arm64.tar.gz"
-      sha256 "1833e1f7b7e41583cb27cafc99d2cf04782d29a0cd9208ea1a9906acf228c801"
+      url "https://github.com/ghchinoy/binder/releases/download/v0.3.3/binder_0.3.3_darwin_arm64.tar.gz"
+      sha256 "99abba1e7bc6f33dd56d384e7143d10c7151bf940797f2d3834c07535399e779"
 
       define_method(:install) do
         bin.install "binder"
@@ -29,15 +29,15 @@ class Binder < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghchinoy/binder/releases/download/v0.3.2/binder_0.3.2_linux_amd64.tar.gz"
-      sha256 "4555d0d5c072b1d46b7351ef255f6672c276954130c86f18247bbc59d64040b2"
+      url "https://github.com/ghchinoy/binder/releases/download/v0.3.3/binder_0.3.3_linux_amd64.tar.gz"
+      sha256 "e536df8582ce0dadb841871b00a8e87136019c00cffb3c1bf4d8f011218f8c2f"
       define_method(:install) do
         bin.install "binder"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghchinoy/binder/releases/download/v0.3.2/binder_0.3.2_linux_arm64.tar.gz"
-      sha256 "b1a3cdfd9589a1f77b38c4f1e54f84b65791a2f47cf197cd2c7e7528994c6559"
+      url "https://github.com/ghchinoy/binder/releases/download/v0.3.3/binder_0.3.3_linux_arm64.tar.gz"
+      sha256 "e886de05e01ce38c453c92bd40a4fdcf3fe43f397ea821103c3429dfb269f244"
       define_method(:install) do
         bin.install "binder"
       end
