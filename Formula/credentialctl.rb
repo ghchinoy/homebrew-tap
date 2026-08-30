@@ -5,13 +5,13 @@
 class Credentialctl < Formula
   desc "C2PA Content Credentials validation and inspection tool with interactive TUI"
   homepage "https://github.com/ghchinoy/credentialctl"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/ghchinoy/credentialctl/releases/download/v0.1.0/credentialctl_0.1.0_darwin_arm64.tar.gz"
-    sha256 "39cf56cf8816d6f4ef83450a3b13ff4456a4f437b766cfbd58afe2cbe35f576e"
+    url "https://github.com/ghchinoy/credentialctl/releases/download/v0.1.1/credentialctl_0.1.1_darwin_arm64.tar.gz"
+    sha256 "37efc8dae7c8215690b55dbad9aac4f3979b5da7d40bef4ba93c1f7b70b4ddaa"
 
     define_method(:install) do
       bin.install "credentialctl"
