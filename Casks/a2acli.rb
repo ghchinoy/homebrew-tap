@@ -4,21 +4,21 @@ cask "a2acli" do
 
   on_macos do
     on_arm do
-      sha256 "1e9d94d2d93e66ea47a7124737f441f949ccfeca0aa85245b946141fbbe6cf18"
+      sha256 "0321a624ba16861213e84c04b590ca60e044641b7818ffa706c5d59b4b548664"
       url "https://github.com/ghchinoy/a2acli/releases/download/v#{version}/a2acli_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "bf2cb045bdeb65c05a81cba93bd71f3aae73962b1f8aa3d95d8f3a5784b3904c"
+      sha256 "295a121def0d1cac6b6f8dc8fceb2dc24f9da10de8b376427e0f9105347fa406"
       url "https://github.com/ghchinoy/a2acli/releases/download/v#{version}/a2acli_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "952b93009f719c4e5c07f9b7e56176ab7196e7cf470bbd637e8e588b56e34f4c"
+      sha256 "869bf6871cfaf9399a36b9d8dd5850e07a11decb4691c62b8ea18f0389ea64dd"
       url "https://github.com/ghchinoy/a2acli/releases/download/v#{version}/a2acli_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "ae336cfe12db640d802e92d877ce89d1d03fe17b5c70030b3db94791cc951c72"
+      sha256 "684a15b9d31ba849ac625cd5c87ae46632673823993075c0f544d7db7e90e884"
       url "https://github.com/ghchinoy/a2acli/releases/download/v#{version}/a2acli_Linux_x86_64.tar.gz"
     end
   end
